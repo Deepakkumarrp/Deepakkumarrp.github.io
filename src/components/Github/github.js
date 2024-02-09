@@ -36,7 +36,7 @@ const Github=()=>{
           data-aos="fade-up"
           className="w-11/12 m-auto pt-10 pb-10 flex justify-center calender"
         >
-          <GitHubCalendar username="Deepakkumarrp"  fontSize={16}  blockSize={16} />
+          <GitHubCalendar username="Deepakkumarrp" colorScheme='light' fontSize={16} blockSize={16} />
         </div>
 
         <div data-aos="fade-up" className="flex justify-center pt-8 border-box">

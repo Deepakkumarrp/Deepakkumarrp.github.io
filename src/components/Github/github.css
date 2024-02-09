@@ -111,9 +111,9 @@
   box-shadow: 0 1px 3px 0 rgba(66, 153, 225, 0.5), 0 1px 2px 0 rgba(66, 153, 225, 0.06);
 }
 
-/* .calender{
-  background-color: var(--theme-primary);
-} */
+.react-activity-calendar{
+  background-color: rgb(184, 201, 238);
+}
 
 @media screen and (max-width: 768px) {
   .text-4xl {
