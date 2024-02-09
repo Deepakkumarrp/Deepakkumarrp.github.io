@@ -1,0 +1,145 @@
+.projectPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+.projectPage-header {
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.projectPage-header > h1 {
+    font-size: 4rem;
+    font-family: var(--primaryFont);
+}
+
+.projectPage-container {
+    padding: 3rem 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.projectPage-search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-container {
+    margin-top: 5rem;
+    width: 100%;
+}
+
+.project-grid {
+    display: flex;
+    gap: 4rem; 
+}
+
+/* theme.type === 'dark'
+? '3px 3px 6px #ffffff40, -3px -3px 6px #00000050'
+: '3px 3px 6px #ffffff40, -3px -3px 6px #00000050', */
+.home {
+    color: var(--theme-secondary);
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    padding: 7px;
+    border-radius: 50%;
+    box-sizing: content-box;
+    font-size: 2rem;
+    cursor: pointer;
+    box-shadow: 3px 3px 6px #ffffff40, -3px -3px 6px #00000050;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        color: var(--theme-tertiary);
+        transform: scale(1.1);
+    }
+
+    @media (max-width: 600px) {
+        font-size: 1.8rem;
+    }
+}
+
+.search {
+    color: var(--theme-tertiary);
+    width: 40%;
+    height: 2.75rem;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 0.95rem 1rem;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    background-color: var(--theme-secondary);
+    box-shadow: 'inset 3px 3px 6px #ffffffbd, inset -3px -3px 6px #00000030';
+
+    &::placeholder {
+        color: var(--theme-tertiary80);
+    }
+
+    @media (max-width: 600px) {
+        width: 350px;
+    }
+}
+
+
+/* Optional: Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    .home {
+        font-size: 1.8rem;
+    }
+}
+
+
+
+
+@media (min-width: 992px) and (max-width: 1380px) {
+
+}
+
+@media screen and (max-width: 992px) {
+    .projectPage-header {
+        height: 25vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .project-grid {
+        gap: 3rem;
+    }
+}
+
+@media screen and (max-width: 702px) {
+    .project-grid {
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .projectPage-header h1 {
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    .projectPage-header {
+        height: 20vh;
+    }
+    .projectPage-header h1 {
+        font-size: 2.5rem;
+    }
+}

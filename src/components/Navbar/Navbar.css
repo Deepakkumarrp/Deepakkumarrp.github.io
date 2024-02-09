@@ -1,0 +1,194 @@
+.navbar {
+    height: 6.5rem;
+    position: absolute;
+    background-color: transparent;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+}
+
+.navbar--container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 3rem;
+    margin-top: 1rem;
+}
+
+.navbar--container > h1 {
+    font-family: 'BestermindRegular';
+    color: var(--primary-2);
+    font-size: 2.5rem;
+    user-select: none;
+}
+
+.navLink--container {
+    margin-top: 5rem;
+}
+
+.drawer > .MuiBackdrop-root {
+    background: rgba(33, 33, 33, 0.15) !important;
+    backdrop-filter: blur(20px) !important;
+}
+
+/* newCSS */
+/* Example usage of the styles */
+.navMenu {
+    font-size: 2.5rem;
+    color: var(--tertiary);
+    cursor: pointer;
+    transform: translateY(-10px);
+    transition: color 0.3s;
+    
+    
+    @media screen and (max-width: 600px) {
+      font-size: 2.5rem;
+    }
+    @media screen and (max-width: 400px) {
+      font-size: 2rem;
+    }
+  }
+.navMenu:hover{
+    color: var(--primary);
+      
+}
+
+.MuiDrawer{
+padding: 0em 1.8em;
+width: 14em;
+font-family: var(--primaryFont);
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+background: var(--theme-secondary);
+overflow: hidden;
+border-top-right-radius: 40px;
+border-bottom-right-radius: 40px;
+@media screen and (max-width: 600px) {
+    width: 12em;
+}
+}
+
+.closebtnIcon{
+font-size: 2rem;
+font-weight: bold;
+cursor: pointer;
+color: var(--primary);
+position: absolute;
+right: 40px;
+top: 40px;
+transition: color 0.2s;
+&:hover {
+    color: var(--theme-tertiary);
+}
+@media screen and (max-width: 600px) {
+    right: 20px;
+    top: 20px;
+}
+}
+
+.closebtnIcon{
+    color: var(--tertiary);
+}
+
+.drawerItem{
+margin: 2rem auto;
+border-radius: 78.8418px;
+background: var(--theme-secondary);
+color: var(--theme-primary);
+width: 85%;
+height: 60px;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+padding: 0 30px;
+box-sizing: border-box;
+border: 2px solid;
+border-color: var(--theme-primary);
+transition: background-color 0.2s, color 0.2s;
+
+@media screen and (max-width: 600px) {
+    width: 100%;
+    padding: 0 25px;
+    height: 55px;
+}
+}
+
+.drawerItem:hover{
+    background: var(--primary);
+    color: var(--secondary);
+}
+
+.drawerLinks{
+font-family: var(--primaryFont);
+width: 50%;
+font-size: 1.3rem;
+font-weight: 600;
+@media screen and (max-width: 600px) {
+    font-size: 1.125rem;
+}
+}
+
+.drawerIcon{
+font-size: 1.6rem;
+
+@media screen and (max-width: 600px) {
+    font-size: 1.385rem;
+}
+}
+
+
+
+@media (max-width:1100px) {
+    .navbar--container{
+        padding: 0 2rem;
+    }
+    .navbar--container > h1{
+        font-size: 2.2rem;
+    }
+    .nav-menu{
+        font-size: 2.2rem;
+        margin-top: -1.5rem;
+    }
+}
+
+@media (max-width:800px) {
+    .navLink--container {
+        margin-top: 3rem;
+    }
+}
+
+
+@media (max-width:600px) {
+    .nav-menu{
+        color: var(--primary-2);
+    }
+    .navbar--container > h1{
+        font-size: 2rem;
+    }
+    .nav-menu:hover{
+        color: var(--primary-2);
+    }
+    .MuiDrawer-paper{
+      border-radius: 0 !important;
+    }
+}
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 
+  480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+    .navbar {
+        height: 5rem;
+    }
+    .navbar--container {
+        padding: 0 1rem;
+        margin-top: 0rem;
+    }
+    .navbar--container > h1 {
+        font-size: 1.5rem;
+    }
+}

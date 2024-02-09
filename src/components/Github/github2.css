@@ -1,0 +1,84 @@
+/* Add these styles to your existing github.css file */
+
+#github {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .github-container {
+    width: 100%;
+    max-width: 1200px; /* Adjust based on your layout */
+  }
+  
+  .github-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .section-title {
+    font-size: 3.5rem;
+    font-family: var(--primaryFont); /* Adjust based on your font setup */
+  }
+  
+  .github-calendar,
+  .github-streak,
+  .github-stats {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .github-calendar img,
+  .github-streak img,
+  .github-stats img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: opacity 0.7s;
+  }
+  
+  .github-calendar img:hover,
+  .github-streak img:hover,
+  .github-stats img:hover {
+    opacity: 0.8;
+  }
+  
+  .github-calendar,
+  .github-streak,
+  .github-stats a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .github-streak,
+  .github-stats {
+    position: relative;
+  }
+  
+  .github-streak::before,
+  .github-stats::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+  }
+  
+  .github-streak::before {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  .github-stats::before {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
