@@ -320,7 +320,7 @@ function Landing() {
                             {headerData.resumePdf && (
                                 <a
                                     href={headerData.resumePdf}
-                                    download='Deepak-Purohit-resume'
+                                    download='Deepak-Purohit-Resume'
                                     target='_blank'
                                     rel='noreferrer'
                                 >
