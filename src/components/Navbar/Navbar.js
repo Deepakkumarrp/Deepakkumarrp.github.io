@@ -138,7 +138,7 @@ function Navbar() {
                                     href={headerData.resumePdf}
                                     download='Deepak-Purohit-Resume.pdf'
                                     target='_blank'
-                                    rel='noopener noreferrer'
+                                    rel='noreferrer'
                                     onClick={() => {
                                         window.open(
                                           "https://drive.google.com/file/d/11KShrVD9uM056qgVAzoKQDid0rAuy1HT/view",
