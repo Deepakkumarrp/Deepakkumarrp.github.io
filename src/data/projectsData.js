@@ -31,11 +31,11 @@ export const projectsData = [
     },
     {
         id: 3,
-        projectName: 'Honest Wing',
-        projectDesc: 'The project Honest-wing, is built with HTML, CSS, and SASS, underwent enhancements to improve aesthetics and the user experience, following the Figma design.',
+        projectName: 'Figma Forge',
+        projectDesc: 'The project Figma Forge, is built with HTML, CSS, and SASS, underwent enhancements to improve aesthetics and the user experience, following the Figma design.',
         tags: ['Html','Css','Sass','Figma'],
-        code: 'https://github.com/SourabhBurman/honest-wing-579',
-        demo: 'https://honest-wing-579.netlify.app/',
+        code: 'https://github.com/SourabhBurman/FigmaForge-Designs',
+        demo: 'https://figmaforge.netlify.app/',
         image: HonestWing
     },
     {

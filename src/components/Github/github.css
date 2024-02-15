@@ -153,6 +153,9 @@
 }
 
 @media screen and (max-width: 600px) {
+  #github{
+    display: none;
+  }
   .text-4xl {
     font-size: 1.5rem;
   }
