@@ -1,5 +1,5 @@
 import resume from '../assets/pdf/resume.pdf'
-import profile from '../assets/profile/profile.jpg'
+import profile from "../assets/profile/profile.jpeg"
 
 export const headerData = {
     name: 'Deepak Purohit',
